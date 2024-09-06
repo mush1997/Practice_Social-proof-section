@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: League Spartan;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  margin: 40px auto;
+  padding: 60px;
+  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 6px 0 #eee;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+body main main > div {
+  flex-basis: 50%;
+  padding: 20px;
+}
+body main div.first-part {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.first-part .title-section {
+  flex-basis: 40%;
+  padding: 20px;
+}
+body main div.first-part .title-section h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+body main div.first-part .title-section p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.4;
+}
+body main div.first-part .rating-section {
+  flex-basis: 40%;
+  padding: 10px;
+}
+body main div.first-part .rating-section .rating {
+  margin: 20px 0;
+  padding: 16px 20px;
+  width: 90%;
+  min-width: 420px;
+  border-radius: 10px;
+  background-color: hsl(300, 24%, 96%);
+  position: relative;
+}
+body main div.first-part .rating-section .rating span {
+  content: url("images/icon-star.svg");
+  margin-right: 6px;
+  vertical-align: middle;
+}
+body main div.first-part .rating-section .rating .fifth-star {
+  margin-right: 20px;
+}
+body main div.first-part .rating-section .rating p {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  line-height: 1.2rem;
+}
+body main div.first-part .rating-section .first {
+  right: 16%;
+}
+body main div.first-part .rating-section .second {
+  right: 8%;
+}
+body main div.first-part .rating-section .third {
+  right: 0;
+}
+body main div.second-part {
+  padding: 20px;
+  display: flex;
+}
+body main div.second-part article {
+  margin: 0 15px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: hsl(300, 43%, 22%);
+}
+body main div.second-part article .person {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+body main div.second-part article .person img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 40px;
+}
+body main div.second-part article .person h2 {
+  margin: 4px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+body main div.second-part article .person p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: hsl(333, 80%, 67%);
+}
+body main div.second-part article p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.2;
+}
+body main div.second-part #c1 {
+  transform: translateY(-16%);
+}
+body main div.second-part #c2 {
+  transform: translateY(-8%);
+}
+
+@media screen and (max-width: 1180px) {
+  body main {
+    padding: 20px;
+    background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+  }
+  body main div.first-part {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  body main div.first-part .title-section {
+    text-align: center;
+  }
+  body main div.first-part .rating-section .rating {
+    margin-bottom: 0;
+    width: 60vw;
+    min-width: 200px;
+    position: static;
+    text-align: center;
+  }
+  body main div.first-part .rating-section .rating .fifth-star {
+    margin-right: 0;
+  }
+  body main div.first-part .rating-section .rating p {
+    display: block;
+    margin-top: 10px;
+  }
+  body main div.second-part {
+    flex-direction: column;
+  }
+  body main div.second-part article {
+    margin: 15px 0 0 0;
+  }
+  body main div.second-part #c1 {
+    transform: none;
+  }
+  body main div.second-part #c2 {
+    transform: none;
+  }
+}/*# sourceMappingURL=style.css.map */
